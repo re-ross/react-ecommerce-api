@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { StringDecoder } = require("string_decoder");
 
 const ProductSchema = new mongoose.Schema(
   {
@@ -8,7 +7,7 @@ const ProductSchema = new mongoose.Schema(
     img: { type: String, required: true },
     categories: { type: Array },
     size: { type: String },
-    color: { type: StringDecoder },
+    color: { type: String },
     price: { type: Number, required: true },
   },
   { timestamps: true }
